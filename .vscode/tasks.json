@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "nix build -f test-armbian-kernel.nix",
+            "command": "nix build .#packages.aarch64-linux.kernel",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
