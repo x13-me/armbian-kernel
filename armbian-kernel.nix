@@ -3,12 +3,12 @@
   url,
   tag,
   sha256,
+  pkgs ? import <nixpkgs> { },
+  stdenv ? pkgs.stdenv,
+  lib ? pkgs.lib,
 }:
 
 let
-  pkgs = import <nixpkgs> { };
-  stdenv = pkgs.stdenv;
-  lib = pkgs.lib;
 
   # Pull the ORAS artifact using the fetch-oras helper
   fetchOras = import ./fetch-oras.nix {

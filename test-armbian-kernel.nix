@@ -2,8 +2,6 @@
 
 # call with nix build -f test-armbian-kernel.nix, or Tasks: Run Build Task in VSCode
 
-
-
 {
   pkgs ? import <nixpkgs> { },
 }:
