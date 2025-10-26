@@ -10,8 +10,8 @@ let
   armbianKernel = import ./armbian-kernel.nix {
     name = "armbian-kernel-rockchip64-edge";
     url = "ghcr.io/armbian/os/kernel-rockchip64-edge";
-    tag = "6.17.1-S4a24-D54d4-P6f64-C992dH3e0d-HK01ba-Vc222-B14f4-R448a";
-    sha256 = "sha256-nik4HzI1YndcGcWi7hIX1lpI22qZagCvxwfNqyRTZIM=";
+    tag = "6.18-rc2-S211d-Deeea-Pb94e-C5175H3e0d-HK01ba-Vc222-B14f4-R448a";
+    sha256 = "sha256-H0LUFu7yFi9d6xKoHy1jw9yqmCxJL/9kz1aWNO4d0Mo=";
   };
   lib = pkgs.lib;
 in
