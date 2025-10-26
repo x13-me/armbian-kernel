@@ -1,0 +1,3 @@
+[submodule "menuboot"]
+	path = menuboot
+	url = https://github.com/x13-me/menuboot
