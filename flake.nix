@@ -24,7 +24,7 @@
         sha256 = "sha256-H0LUFu7yFi9d6xKoHy1jw9yqmCxJL/9kz1aWNO4d0Mo=";
       };
       nixosModules = {
-        menuboot = ./menuboot;
+        menuboot = ./menuboot/default.nix;
       };
     };
 }
