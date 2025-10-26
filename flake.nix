@@ -2,7 +2,7 @@
   description = "Armbian kernel flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs";
   };
 
   outputs =
