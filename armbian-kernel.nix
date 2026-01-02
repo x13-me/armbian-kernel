@@ -55,6 +55,7 @@ stdenv.mkDerivation {
     # extract debs
       for deb in "$src"/*.deb; do
         [ -e "$deb" ] || return
+        echo '$deb='"$deb"
         # dirName=$(basename "$deb" | sed -En 's/linux-(\w+-?\w+)-\w+-\w+_.*_\w+\.deb/\1/p')
         # [ -n "$dirName" ] || return
         # mkdir -p "$unpackDir/$dirName"

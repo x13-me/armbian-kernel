@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "nix build .#packages.aarch64-linux.kernel",
+            "command": "nix build .#",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
