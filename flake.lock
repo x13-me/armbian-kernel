@@ -1,23 +1,41 @@
 {
   "nodes": {
-    "nixpkgs": {
+    "armbian-build": {
+      "flake": false,
       "locked": {
-        "lastModified": 1767242400,
-        "narHash": "sha256-knFaYjeg7swqG1dljj1hOxfg39zrIy8pfGuicjm9s+o=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "c04833a1e584401bb63c1a63ddc51a71e6aa457a",
+        "lastModified": 1782569440,
+        "narHash": "sha256-s/fZq/3VA1yjaemgD3uS11yXqIH37OHS8y6zWpkRW6w=",
+        "owner": "armbian",
+        "repo": "build",
+        "rev": "9a6ea452c4bb36a869f7fce68641e232881c5a38",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "nixpkgs-unstable",
+        "owner": "armbian",
+        "repo": "build",
+        "rev": "9a6ea452c4bb36a869f7fce68641e232881c5a38",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1782375420,
+        "narHash": "sha256-wiPYmEuHbJvleW489n6+lamL7JSJg3pcKUYwURU9CkI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "4062d36ebeae843c750011eef6b61ec9a9dbc9a9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-26.05",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
+        "armbian-build": "armbian-build",
         "nixpkgs": "nixpkgs"
       }
     }
