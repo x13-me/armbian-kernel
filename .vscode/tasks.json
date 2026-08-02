@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "nix build .#",
+            "command": "nix build .#packages.aarch64-linux.rockchip64-current",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

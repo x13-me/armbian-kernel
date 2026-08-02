@@ -1,0 +1,68 @@
+{
+  "rockchip64-current": {
+    "arch": "aarch64-linux",
+    "family": "rockchip64",
+    "branch": "current",
+    "version": "6.18.37",
+    "majorMinor": "6.18",
+    "kernelTarball": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.37.tar.xz",
+    "kernelHash": "sha256-qDzSAOZkbbUoZrgwnpE3uekEi2E8vaEM7SuBGq4SUlU=",
+    "patchDir": "patch/kernel/archive/rockchip64-6.18",
+    "configFile": "config/kernel/linux-rockchip64-current.config",
+    "modDirVersion": "6.18.37-current-rockchip64",
+    "localversion": "-current-rockchip64",
+    "enableConfigs": ["FW_LOADER_COMPRESS", "FW_LOADER_COMPRESS_ZSTD"],
+    "dtsDirectories": [
+      { "source": "dt", "target": "arch/arm64/boot/dts/rockchip" }
+    ],
+    "overlayDirectories": [
+      { "source": "overlay", "target": "arch/arm64/boot/dts/rockchip/overlay" }
+    ],
+    "autopatchMakefile": [
+      { "directory": "arch/arm64/boot/dts/rockchip", "configVar": "CONFIG_ARCH_ROCKCHIP" }
+    ]
+  },
+  "rockchip64-edge": {
+    "arch": "aarch64-linux",
+    "family": "rockchip64",
+    "branch": "edge",
+    "version": "7.1.3",
+    "majorMinor": "7.1",
+    "kernelTarball": "https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.1.3.tar.xz",
+    "kernelHash": "sha256-vkHAaOiPUkKhm8zb/74HexjEe0X2J+IyVQS0+red0dw=",
+    "patchDir": "patch/kernel/archive/rockchip64-7.1",
+    "configFile": "config/kernel/linux-rockchip64-edge.config",
+    "modDirVersion": "7.1.3-edge-rockchip64",
+    "localversion": "-edge-rockchip64",
+    "enableConfigs": ["FW_LOADER_COMPRESS", "FW_LOADER_COMPRESS_ZSTD"],
+    "dtsDirectories": [
+      { "source": "dt", "target": "arch/arm64/boot/dts/rockchip" }
+    ],
+    "overlayDirectories": [
+      { "source": "overlay", "target": "arch/arm64/boot/dts/rockchip/overlay" }
+    ],
+    "autopatchMakefile": [
+      { "directory": "arch/arm64/boot/dts/rockchip", "configVar": "CONFIG_ARCH_ROCKCHIP" }
+    ]
+  },
+  "rk35xx-vendor": {
+    "arch": "aarch64-linux",
+    "family": "rk35xx",
+    "branch": "vendor",
+    "version": "6.1.115",
+    "majorMinor": "6.1",
+    "kernelGit": {
+      "url": "https://github.com/armbian/linux-rockchip",
+      "rev": "1c4304ffa1a261d1842fa44a80a71a3dfb337ef4",
+      "hash": "sha256-g5j1wwWaL2R4YteC5ScWcwjk4Kk/4D9NT0EMNUxVvKo="
+    },
+    "patchDir": "patch/kernel/rk35xx-vendor-6.1",
+    "configFile": "config/kernel/linux-rk35xx-vendor.config",
+    "modDirVersion": "6.1.115-vendor-rk35xx",
+    "localversion": "-vendor-rk35xx",
+    "disableConfigs": ["MALI_CSF_INCLUDE_FW"],
+    "dtsDirectories": [],
+    "overlayDirectories": [],
+    "autopatchMakefile": []
+  }
+}
