@@ -41,6 +41,8 @@
       # Systems that own at least one buildable target.
       targetSystems = lib.unique (lib.mapAttrsToList (_: e: e.arch) kernels);
 
+      allSystems = lib.unique (targetSystems ++ hostSystems);
+
       # A from-source kernel must be compiled on its target arch (unlike the old
       # repack, which only copied files). On an x86_64 host, aarch64 builds
       # offload to the remote aarch64 builder / qemu binfmt.
@@ -75,8 +77,17 @@
         };
 
       # The bare kernel derivation per target (for `nix build` / CI / checks).
-      packages = forSystems targetSystems (
-        system: lib.mapAttrs (_: lp: lp.kernel) (packagesForSystem system)
+      packages = forSystems allSystems (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
+        (lib.optionalAttrs (lib.elem system targetSystems) (
+          lib.mapAttrs (_: lp: lp.kernel) (packagesForSystem system)
+        ))
+        // {
+          update-kernels = import ./packages/update-kernels.nix { inherit pkgs; };
+        }
       );
 
       # Cheap structure assertion per target: a kernel image, a modules tree,
