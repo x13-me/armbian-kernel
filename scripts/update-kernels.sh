@@ -16,7 +16,6 @@ else
 fi
 [[ -z "$LATEST_HASH" ]] && { echo "Error: Unable to determine latest Armbian reference" >&2; exit 1; }
 
-cp "$FLAKENIX_PATH" "${FLAKENIX_PATH}.bak_$(date +%s)"
 echo "CURRENT_HASH=$CURRENT_HASH"
 echo "LATEST_TAG=$LATEST_TAG"
 echo "LATEST_HASH=$LATEST_HASH"
