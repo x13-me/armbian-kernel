@@ -2,7 +2,7 @@
   description = "Armbian kernels built from source as NixOS kernelPackages, with full out-of-tree module support";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     # Armbian's build framework is the source of truth for every target's patch
     # series, kernel `.config`, and device-tree overlays. Pinned (flake=false)
