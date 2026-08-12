@@ -37,7 +37,6 @@ if [[ "$CURRENT_HASH" == "$LATEST_HASH" ]]; then
 fi
 
 # --- 4. Update flake.nix ---
-cp "$FLAKENIX_PATH" "${FLAKENIX_PATH}.bak_$(date +%s)"
 sed -i -E "s|git\+https://github\.com/${ARMBIAN_REPO}\.git\?rev=[a-f0-9]{40}|git+https://github.com/${ARMBIAN_REPO}.git?rev=${LATEST_HASH}|" "$FLAKENIX_PATH"
 nix flake update
 
