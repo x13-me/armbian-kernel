@@ -3,27 +3,27 @@
     "armbian-build": {
       "flake": false,
       "locked": {
-        "lastModified": 1786345721,
-        "narHash": "sha256-qCJYQqY3beZh4T/uHJwtDHp1Gob/j2EwLjcXOq7KJ18=",
+        "lastModified": 1786946781,
+        "narHash": "sha256-lytvemfXmPHz3Oeb44djZzdXAzGopilNHPG+qD7pwC4=",
         "ref": "refs/heads/main",
-        "rev": "bdbc12ec5f9954b1d62dc731c84616588cf695a4",
-        "revCount": 18841,
+        "rev": "2db577f84818765eedb75a84eed39591b7849755",
+        "revCount": 18913,
         "type": "git",
         "url": "https://github.com/armbian/build.git"
       },
       "original": {
-        "rev": "bdbc12ec5f9954b1d62dc731c84616588cf695a4",
+        "rev": "2db577f84818765eedb75a84eed39591b7849755",
         "type": "git",
         "url": "https://github.com/armbian/build.git"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1786599213,
-        "narHash": "sha256-yNJd40f11EzXBjSByCB7IPpeFFAdeoSKKM67dGkfFoU=",
+        "lastModified": 1787001381,
+        "narHash": "sha256-Ue1Yo8gfHdD4TMtNewhA4tkSYeFqXThju0nCyJc3ALo=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "0e251e24a4f24e036a084b6b4b2d2491af4167f4",
+        "rev": "ec2d622de0773551768cf98f3fc50cbcc003b9c5",
         "type": "github"
       },
       "original": {
