@@ -8,7 +8,7 @@
     # series, kernel `.config`, and device-tree overlays. Pinned (flake=false)
     # so one content-addressed fetch supplies all of them for all targets.
     armbian-build = {
-      url = "git+https://github.com/armbian/build.git?rev=2db577f84818765eedb75a84eed39591b7849755";
+      url = "git+https://github.com/armbian/build.git?rev=3da49cffcb8ac58a919d86816fec4659c410ff1e";
       flake = false;
     };
   };
